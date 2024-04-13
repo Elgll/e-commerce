@@ -1,0 +1,118 @@
+@model galli.mingucci._5i.Progetto_E_Commerce.Data.Bike
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Bike</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SetUp" class="control-label"></label>
+                <input asp-for="SetUp" class="form-control" />
+                <span asp-validation-for="SetUp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductionYear" class="control-label"></label>
+                <input asp-for="ProductionYear" class="form-control" />
+                <span asp-validation-for="ProductionYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Displacement" class="control-label"></label>
+                <input asp-for="Displacement" class="form-control" />
+                <span asp-validation-for="Displacement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Power" class="control-label"></label>
+                <input asp-for="Power" class="form-control" />
+                <span asp-validation-for="Power" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Strokes" class="control-label"></label>
+                <input asp-for="Strokes" class="form-control" />
+                <span asp-validation-for="Strokes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cylinders" class="control-label"></label>
+                <input asp-for="Cylinders" class="form-control" />
+                <span asp-validation-for="Cylinders" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CylindersConfiguration" class="control-label"></label>
+                <input asp-for="CylindersConfiguration" class="form-control" />
+                <span asp-validation-for="CylindersConfiguration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CylinderDisposition" class="control-label"></label>
+                <input asp-for="CylinderDisposition" class="form-control" />
+                <span asp-validation-for="CylinderDisposition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Refrigeration" class="control-label"></label>
+                <input asp-for="Refrigeration" class="form-control" />
+                <span asp-validation-for="Refrigeration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartUp" class="control-label"></label>
+                <input asp-for="StartUp" class="form-control" />
+                <span asp-validation-for="StartUp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clutch" class="control-label"></label>
+                <input asp-for="Clutch" class="form-control" />
+                <span asp-validation-for="Clutch" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValvesNumber" class="control-label"></label>
+                <input asp-for="ValvesNumber" class="form-control" />
+                <span asp-validation-for="ValvesNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Distribution" class="control-label"></label>
+                <input asp-for="Distribution" class="form-control" />
+                <span asp-validation-for="Distribution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

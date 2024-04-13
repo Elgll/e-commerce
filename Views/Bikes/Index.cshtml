@@ -1,0 +1,131 @@
+@model IEnumerable<galli.mingucci._5i.Progetto_E_Commerce.Data.Bike>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SetUp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductionYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Displacement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Power)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Strokes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cylinders)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CylindersConfiguration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CylinderDisposition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Refrigeration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartUp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clutch)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValvesNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distribution)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SetUp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductionYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Displacement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Strokes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cylinders)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CylindersConfiguration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CylinderDisposition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Refrigeration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartUp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clutch)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValvesNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distribution)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Model">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Model">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Model">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
